@@ -3,7 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ZenithTask</title>
+
+    <!-- Refined SEO -->
+    <title>ZenithTask - Automate Your Calls With AI</title>
+    <meta name="description" content="Automate appointments, reservations, and travel planning with AI-driven calls. Save time, break language barriers, and let ZenithTask handle it.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ZenithTask",
+      "url": "https://example.com",
+      "logo": "https://example.com/logo.png",
+      "description": "Automate your calls with ZenithTask AI. Save time, break language barriers, and handle appointments seamlessly.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@zenithtask.com",
+        "contactType": "customer support"
+      }
+    }
+    </script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
@@ -12,44 +32,40 @@
         background-color: #fdfdfd;
       }
       .navbar {
-        position: sticky;
-        top: 0;
-        z-index: 999;
+        position: sticky; top: 0; z-index: 999;
       }
+
+      /* Improved Visual Hierarchy */
       .hero {
         background: linear-gradient(to bottom right, #eef5ff, #ffffff);
         padding: 100px 0;
         text-align: center;
       }
       .hero h1 {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
+        font-size: 4rem;
+        margin-bottom: 30px;
         color: #333;
       }
       .hero p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 20px;
         color: #666;
       }
+
       .btn-hero {
-        background-color: #28a745; 
+        background-color: #ffc107; 
         color: #fff; 
         border: none;
       }
-      .btn-hero:hover {
-        background-color: #218838;
-      }
+
       .step-icon, .feature-icon {
-        font-size: 3rem;
-        color: #0d6efd;
-        margin-bottom: 15px;
-        display: inline-block;
+        font-size: 3rem; color: #0d6efd; margin-bottom: 15px; display: inline-block;
       }
+
       .section-title {
-        margin-bottom: 40px;
-        font-size: 2.5rem;
-        color: #333;
+        margin-bottom: 40px; font-size: 2.5rem; color: #333;
       }
+
       .feature-box, .steps .col-md-4 {
         padding: 20px;
         border-radius: 10px;
@@ -60,9 +76,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
       footer {
-        background: #eef5ff;
-        padding: 30px 0;
-        text-align: center;
+        background: #eef5ff; padding: 30px 0; text-align: center;
       }
       .fade-in {
         opacity:0;
@@ -70,8 +84,7 @@
         transition: all 0.6s ease-in-out;
       }
       .fade-in.visible {
-        opacity:1;
-        transform: translateY(0);
+        opacity:1; transform: translateY(0);
       }
     </style>
   </head>
@@ -79,9 +92,10 @@
     <nav class="navbar navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">ZenithTask</a>
-        <div>
-          <a href="register.html" class="btn btn-hero me-2">Start Your AI Call</a>
-          <a href="register.html" class="btn btn-outline-primary">Get Started Now</a>
+        <!-- Clear, Prominent CTA Above the Fold -->
+        <div class="d-flex align-items-center">
+          <a href="register.html" class="btn btn-hero btn-lg me-3">Start Your AI Call Now</a>
+          <a href="register.html" class="btn btn-outline-primary btn-lg">Get Started</a>
         </div>
       </div>
     </nav>
@@ -209,6 +223,23 @@
       </div>
     </section>
 
+    <!-- Concise FAQ Section -->
+    <section class="py-5 text-center fade-in">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-start mt-4">
+            <h5>How do I get started?</h5>
+            <p>Create an account and define your first task. Our AI will handle the calls for you.</p>
+            <h5>How is the pricing calculated?</h5>
+            <p>We charge $0.5 per minute of call time, starting with a $5 credit. No hidden fees.</p>
+            <h5>What languages do you support?</h5>
+            <p>ZenithTask can handle calls in multiple languages, adapting to language and time zone needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-5 bg-light text-center fade-in">
       <div class="container">
         <h2>Ready to Free Yourself from Calls?</h2>
@@ -236,7 +267,6 @@
           }
         });
       }
-
       document.addEventListener('DOMContentLoaded', () => {
         showFadeInElements();
       });
