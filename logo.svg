@@ -1,0 +1,31 @@
+<svg width="360" height="80" viewBox="0 0 440 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A85E2; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F5DA7; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow Filter -->
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.3" />
+  </filter>
+
+  <!-- Four Diamond Shapes, Enlarged and Shifted -->
+  <g transform="translate(50, 40) scale(1.2)">
+    <!-- Top Diamond -->
+    <polygon points="0,-35 15,-20 0,-5 -15,-20" fill="url(#blueGradient)" filter="url(#shadow)"/>
+    <!-- Right Diamond -->
+    <polygon points="35,0 20,15 5,0 20,-15" fill="url(#blueGradient)" filter="url(#shadow)"/>
+    <!-- Bottom Diamond -->
+    <polygon points="0,35 15,20 0,5 -15,20" fill="url(#blueGradient)" filter="url(#shadow)"/>
+    <!-- Left Diamond -->
+    <polygon points="-35,0 -20,15 -5,0 -20,-15" fill="url(#blueGradient)" filter="url(#shadow)"/>
+  </g>
+
+  <!-- Enlarged Text -->
+  <text x="110" y="60" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="bold" fill="#4A85E2">
+    ZenithTask
+  </text>
+</svg>
