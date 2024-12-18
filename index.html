@@ -84,19 +84,23 @@
       .fade-in.visible {
         opacity:1; transform: translateY(0);
       }
-      @media (max-width: 768px) {
+    @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem; /* Smaller font size for smaller screens */
+    font-size: 2.2rem; /* Reduce header font size */
+    line-height: 1.2; /* Adjust line spacing */
+    margin-bottom: 20px;
   }
   .hero p {
-    font-size: 1rem;
+    font-size: 1rem; /* Smaller paragraph font */
+    margin-bottom: 15px;
+  }
+  .btn-hero, .btn-outline-primary {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 10px; /* Smaller padding for buttons */
   }
   .navbar .d-flex {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column;
     gap: 10px; /* Add spacing between buttons */
-  }
-  .btn-hero {
-    width: 100%; /* Make buttons full width for smaller screens */
   }
 }
     </style>
@@ -105,9 +109,9 @@
     <nav class="navbar navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">ZenithTask</a>
-        <div class="d-flex align-items-center flex-wrap justify-content-center gap-2">
-  <a href="register.html" class="btn btn-hero btn-lg">Start Your AI Call Now</a>
-  <a href="register.html" class="btn btn-outline-primary btn-lg">Get Started</a>
+        <div class="d-flex align-items-center flex-column flex-md-row gap-2">
+  <a href="register.html" class="btn btn-hero btn-lg w-100 w-md-auto">Start Your AI Call Now</a>
+  <a href="register.html" class="btn btn-outline-primary btn-lg w-100 w-md-auto">Get Started</a>
 </div>
       </div>
     </nav>
