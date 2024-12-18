@@ -84,16 +84,31 @@
       .fade-in.visible {
         opacity:1; transform: translateY(0);
       }
+      @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller font size for smaller screens */
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .navbar .d-flex {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add spacing between buttons */
+  }
+  .btn-hero {
+    width: 100%; /* Make buttons full width for smaller screens */
+  }
+}
     </style>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">ZenithTask</a>
-        <div class="d-flex align-items-center">
-          <a href="register.html" class="btn btn-hero btn-lg me-3">Start Your AI Call Now</a>
-          <a href="register.html" class="btn btn-outline-primary btn-lg">Get Started</a>
-        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-center gap-2">
+  <a href="register.html" class="btn btn-hero btn-lg">Start Your AI Call Now</a>
+  <a href="register.html" class="btn btn-outline-primary btn-lg">Get Started</a>
+</div>
       </div>
     </nav>
 
